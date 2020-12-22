@@ -1,11 +1,11 @@
 require 'pry'
 
-extend Memorable::ClassMethods
-include Memorable::InstanceMethods
-
 class Artist
   attr_accessor :name
   attr_reader :songs
+
+  extend Memorable::ClassMethods
+  include Memorable::InstanceMethods
 
   @@artists = []
 
