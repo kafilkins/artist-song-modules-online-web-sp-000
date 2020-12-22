@@ -6,7 +6,6 @@ class Artist
 
   extend Memorable::ClassMethods
 
-
   @@artists = []
 
   def initialize
